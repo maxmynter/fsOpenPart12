@@ -1,0 +1,99 @@
+Script started on Sun Aug 20 16:41:16 2023
+[1m[7m%[27m[1m[0m                                                                                                                                                
+ 
+
+[0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004h[7mdocker run -it ubuntu bash[27m[26D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?2004l
+
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K
+db76c1f8aa17: Pulling fs layer 
+[1B[1A[2K
+db76c1f8aa17: Downloading [>                                                  ]  276.8kB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=>                                                 ]  551.3kB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [===>                                               ]   1.94MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [======>                                            ]  3.619MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=========>                                         ]  5.012MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [===========>                                       ]    6.4MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=============>                                     ]  7.519MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [================>                                  ]  9.194MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [==================>                                ]  10.03MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=====================>                             ]   11.7MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=======================>                           ]  12.82MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=========================>                         ]  14.21MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [============================>                      ]  15.33MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [===============================>                   ]     17MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [================================>                  ]  17.84MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [===================================>               ]  19.51MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=====================================>             ]  20.34MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [========================================>          ]  22.02MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=========================================>         ]  22.85MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [============================================>      ]  24.53MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [==============================================>    ]  25.36MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Downloading [=================================================> ]  27.04MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Download complete 
+[1B[1A[2K
+db76c1f8aa17: Extracting [>                                                  ]  294.9kB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [=========>                                         ]  5.014MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [=============>                                     ]  7.373MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [=====================>                             ]   11.8MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [===============================>                   ]   17.1MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [========================================>          ]  22.12MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [==============================================>    ]  25.36MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Extracting [==================================================>]  27.35MB/27.35MB
+[1B[1A[2K
+db76c1f8aa17: Pull complete 
+[1BDigest: sha256:ec050c32e4a6085b423d36ecd025c0d3ff00c38ab93a3d71a460ff1c44fa6d77
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@10331718bb77: /root@10331718bb77:/# 
+[K]0;root@10331718bb77: /root@10331718bb77:/# mkdir . / /
+.dockerenv  boot/       etc/        lib/        mnt/        proc/       run/        srv/        tmp/        var/        
+bin/        dev/        home/       media/      opt/        root/       sbin/       sys/        usr/        
+]0;root@10331718bb77: /root@10331718bb77:/# mkdir /user  r/
+bin/     games/   include/ lib/     libexec/ local/   sbin/    share/   src/     
+]0;root@10331718bb77: /root@10331718bb77:/# mkdir /usr/s
+sbin/  share/ src/   
+]0;root@10331718bb77: /root@10331718bb77:/# mkdir /usr/src/app
+[?2004l
+[?2004h]0;root@10331718bb77: /root@10331718bb77:/# touch usr/src/app/index.js
+[?2004l
+[?2004h]0;root@10331718bb77: /root@10331718bb77:/# [Kexit
+[?2004l
+exit
+[1m[7m%[27m[1m[0m                                                                                                                                                
+ 
+                                                                                                                                    
+[0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004hr eexit[?2004l
+
+
+Script done on Sun Aug 20 16:56:17 2023
