@@ -1,0 +1,106 @@
+Script started on Mon Aug 21 23:30:38 2023
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004hddocker exec     ps[?2004l
+CONTAINER ID   IMAGE                                             COMMAND                  CREATED         STATUS                  PORTS                                                                       NAMES
+3f706adaf19d   nginx                                             "/docker-entrypoint.…"   6 minutes ago   Up 6 minutes            0.0.0.0:8080->80/tcp                                                        great_tu
+0d3dffcd04a1   mongo                                             "docker-entrypoint.s…"   7 hours ago     Up 29 seconds           0.0.0.0:3456->27017/tcp                                                     todo-backend-mongo-1
+628973fca2ab   public.ecr.aws/supabase/studio:20230512-ad596d8   "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   0.0.0.0:3005->3000/tcp                                                      supabase_studio_langchain-playground
+91112fd6a5b0   public.ecr.aws/supabase/postgres-meta:v0.66.0     "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   8080/tcp                                                                    supabase_pg_meta_langchain-playground
+6d12a94540ed   public.ecr.aws/supabase/imgproxy:v3.8.0           "imgproxy"               2 months ago    Up 31 hours (healthy)   8080/tcp                                                                    storage_imgproxy_langchain-playground
+a085a5e639b4   public.ecr.aws/supabase/storage-api:v0.37.4       "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   5000/tcp                                                                    supabase_storage_langchain-playground
+1d79efe152e4   public.ecr.aws/supabase/postgrest:v10.1.2         "/bin/sh -c postgrest"   2 months ago    Up 31 hours             3000/tcp                                                                    supabase_rest_langchain-playground
+a9b36ccbfdd9   public.ecr.aws/supabase/realtime:v2.10.1          "/usr/bin/tini -s -g…"   2 months ago    Up 31 hours (healthy)   4000/tcp                                                                    realtime-dev.supabase_realtime_langchain-playground
+227f81f095b6   public.ecr.aws/supabase/inbucket:3.0.3            "/start-inbucket.sh …"   2 months ago    Up 31 hours (healthy)   0.0.0.0:3008->1100/tcp, 0.0.0.0:3007->2500/tcp, 0.0.0.0:3006->9000/tcp      supabase_inbucket_langchain-playground
+c12d652f48c0   public.ecr.aws/supabase/gotrue:v2.62.1            "gotrue"                 2 months ago    Up 31 hours (healthy)   9999/tcp                                                                    supabase_auth_langchain-playground
+1991f9f3e6fa   public.ecr.aws/supabase/kong:2.8.1                "sh -c 'cat <<'EOF' …"   2 months ago    Up 31 hours (healthy)   8001/tcp, 8443-8444/tcp, 0.0.0.0:3003->8000/tcp                             supabase_kong_langchain-playground
+b736ed0145e7   public.ecr.aws/supabase/postgres:15.1.0.73        "sh -c 'cat <<'EOF' …"   2 months ago    Up 31 hours (healthy)   0.0.0.0:3004->5432/tcp                                                      supabase_db_langchain-playground
+48e63906ac58   public.ecr.aws/supabase/studio:20230512-ad596d8   "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   0.0.0.0:54323->3000/tcp                                                     supabase_studio_secondbrain
+9bf91fbb7ae5   public.ecr.aws/supabase/postgres-meta:v0.60.7     "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   8080/tcp                                                                    supabase_pg_meta_secondbrain
+5c755cf24af7   public.ecr.aws/supabase/imgproxy:v3.8.0           "imgproxy"               2 months ago    Up 31 hours (healthy)   8080/tcp                                                                    storage_imgproxy_secondbrain
+bb8cb6a55236   public.ecr.aws/supabase/storage-api:v0.37.4       "docker-entrypoint.s…"   2 months ago    Up 31 hours (healthy)   5000/tcp                                                                    supabase_storage_secondbrain
+7d597f3bc742   public.ecr.aws/supabase/postgrest:v10.1.2         "/bin/sh -c postgrest"   2 months ago    Up 31 hours             3000/tcp                                                                    supabase_rest_secondbrain
+8ea15cc56c73   public.ecr.aws/supabase/realtime:v2.10.1          "/usr/bin/tini -s -g…"   2 months ago    Up 31 hours (healthy)   4000/tcp                                                                    realtime-dev.supabase_realtime_secondbrain
+07b1fcaf1ba1   public.ecr.aws/supabase/inbucket:3.0.3            "/start-inbucket.sh …"   2 months ago    Up 31 hours (healthy)   0.0.0.0:54326->1100/tcp, 0.0.0.0:54325->2500/tcp, 0.0.0.0:54324->9000/tcp   supabase_inbucket_secondbrain
+0ecfa4535987   public.ecr.aws/supabase/gotrue:v2.62.1            "gotrue"                 2 months ago    Up 31 hours (healthy)   9999/tcp                                                                    supabase_auth_secondbrain
+f460b361adbe   public.ecr.aws/supabase/kong:2.8.1                "sh -c 'cat <<'EOF' …"   2 months ago    Up 31 hours (healthy)   8001/tcp, 8443-8444/tcp, 0.0.0.0:54321->8000/tcp                            supabase_kong_secondbrain
+39632adaed64   public.ecr.aws/supabase/postgres:15.1.0.73        "sh -c 'cat <<'EOF' …"   2 months ago    Up 31 hours (healthy)   0.0.0.0:54322->5432/tcp                                                     supabase_db_secondbrain
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004hddocker exec -it todo-backend-monm go-1 [?2004l
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004hdocker exec -it todo-backend-mongo-1 bash[?2004l
+[?2004hroot@0d3dffcd04a1:/# pwd
+[?2004l/
+[?2004hroot@0d3dffcd04a1:/# mongo
+[?2004lbash: mongo: command not found
+[?2004hroot@0d3dffcd04a1:/# mongosh -u root -p 
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Enter password: *******
+Current Mongosh Log ID:	64e3d876ef89f4d084855b8d
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.5[0m
+Using MongoDB:		7.0.0
+[1m[33mUsing Mongosh[0m:		1.10.5
+
+For mongosh info see: [1mhttps://docs.mongodb.com/mongodb-shell/[0m
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the [1mdisableTelemetry()[0m command.
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2023-08-21T21:31:18.843+00:00: vm.max_map_count is too low
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m        108.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   56.00 KiB
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshwo [1G[0Jthe_database> shwo[19G[1G[0Jthe_database> shw[18G[1G[0Jthe_database> sh[17Gow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId("64e370dd759b8961b2129b7c"),
+    text: [32m'Write this'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("64e370dd759b8961b2129b7d"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G [1G[0Jthe_database> [15Gdb.,[1G[0Jthe_database> db.[18Gtodos.insertOne({})[1D[1G[0Jthe_database> db.todos.insertOne[44m([49m{})[36G[1D[1G[0Jthe_database> db.todos.insertOne([44m{[49m})[35G[1G[0Jthe_database> db.todos.insertOne([44m{[49mt})[36G[1G[0Jthe_database> db.todos.insertOne([44m{[49mte})[37G[1G[0Jthe_database> db.todos.insertOne([44m{[49mtex})[38G[1G[0Jthe_database> db.todos.insertOne([44m{[49mtext})[39G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:})[40G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"})[39m[41G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"I})[39m[42G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"In})[39m[43G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Inc})[39m[44G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Incr})[39m[45G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Incre})[39m[46G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increa})[39m[47G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increas})[39m[48G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase})[39m[49G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase })[39m[50G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase t})[39m[51G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase th})[39m[52G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the})[39m[53G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the })[39m[54G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the n})[39m[55G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the nu})[39m[56G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the num})[39m[57G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the numb})[39m[58G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the numbe})[39m[59G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number})[39m[60G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number })[39m[61G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number o})[39m[62G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of})[39m[63G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of })[39m[64G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of t})[39m[65G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of to})[39m[66G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of too})[39m[67G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tool})[39m[68G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools})[39m[69G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools })[39m[70G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools i})[39m[71G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in})[39m[72G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in })[39m[73G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in m})[39m[74G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my})[39m[75G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my })[39m[76G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my t})[39m[77G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my to})[39m[78G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my too})[39m[79G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my tool})[39m[80G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolb})[39m[81G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolbe})[39m[82G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolbel})[39m[83G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolbelt})[39m[84G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m})[85G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m,})[86G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, })[87G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, d})[88G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [36mdo[39m})[89G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, don})[90G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, done})[91G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:})[92G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:f})[93G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:fa})[94G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:fal})[95G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:fals})[96G[1G[0Jthe_database> db.todos.insertOne([44m{[49m[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:[33mfalse[39m})[97G[1C[1G[0Jthe_database> db.todos.insertOne[44m([49m{[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:[33mfalse[39m})[98G[1C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:[33mfalse[39m})[99G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId("64e3d8f2ef89f4d084855b8e")
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m:[32m"Increase the number of tools in my toolbelt"[39m, [33mdone[39m:[33mfalse[39m})[99G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId("64e370dd759b8961b2129b7c"),
+    text: [32m'Write this'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId("64e370dd759b8961b2129b7d"),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId("64e3d8f2ef89f4d084855b8e"),
+    text: [32m'Increase the number of tools in my toolbelt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@0d3dffcd04a1:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) maxmynter@Maxs-MacBook-Pro Part12 % [K[?2004hrrxi r  eexit[?2004l
+
+Script done on Mon Aug 21 23:37:07 2023
