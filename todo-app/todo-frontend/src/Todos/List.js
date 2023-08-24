@@ -1,6 +1,6 @@
 import React from "react"
 
-const Todo = ({ onClickDelete, onClickComplete, todo }) => {
+export const Todo = ({ onClickDelete, onClickComplete, todo }) => {
   const doneInfo = (
     <>
       <span>This todo is done</span>
