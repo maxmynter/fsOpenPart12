@@ -1,0 +1,11 @@
+services:
+  app:
+    image: todo-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/user/src/app
+    ports:
+      - 5002:3000
+    container_name: todo_front

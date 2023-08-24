@@ -1,4 +1,11 @@
-FROM node:16
+FROM node:16 AS build-test-stage
+
+WORKDIR /usr/src/app
+
+CMD CI=true npm test
+
+
+FROM node:16 AS run-stag
 
 WORKDIR /usr/src/app
 
